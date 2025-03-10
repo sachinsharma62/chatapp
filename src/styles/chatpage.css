@@ -1,0 +1,43 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden; /* पूरी बॉडी को overflow रोकने के लिए */
+  }
+  
+  .container-fluid {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  
+  .chat-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding-bottom: 10px;
+  }
+  
+  .sidebar {
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .chat-messages::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  .chat-messages::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .height-custom{
+    height: calc(100vh - 66px);
+  }
+  
