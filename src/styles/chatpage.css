@@ -40,4 +40,8 @@ html, body {
   .height-custom{
     height: calc(100vh - 66px);
   }
-  
+  @media  screen and (max-width:450px) {
+    .height-custom{
+      height: calc(100vh - 80px);
+    }
+  }
