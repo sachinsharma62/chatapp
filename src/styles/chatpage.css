@@ -42,6 +42,6 @@ html, body {
   }
   @media  screen and (max-width:450px) {
     .height-custom{
-      height: calc(100vh - 130px);
+      height: calc(100vh - 140px);
     }
   }

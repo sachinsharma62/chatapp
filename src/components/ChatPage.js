@@ -133,7 +133,7 @@ const ChatPage = () => {
 
   return (
     <Container fluid className="vh-100 d-flex flex-column">
-      <Card className="p-3 bg-primary text-white d-flex flex-row justify-content-between align-items-center">
+      <Card className="p-1 bg-primary text-white d-flex flex-row justify-content-between align-items-center">
         <h5>Chat App</h5>
         <Button variant="danger" size="sm" onClick={() => signOut(auth).then(() => navigate("/login"))}>
           Logout
@@ -160,7 +160,7 @@ const ChatPage = () => {
 
         {selectedUser && (
                   <Col md={9} className="d-flex flex-column chat-section">
-                    <Card className="p-3 bg-primary text-white d-flex flex-row justify-content-between align-items-center">
+                    <Card className="p-1 bg-primary text-white d-flex flex-row justify-content-between align-items-center">
                     {isMobile && (
     <Button variant="light" size="sm" className="me-2" onClick={() => setSelectedUser(null)}>
       <FaArrowLeft />
